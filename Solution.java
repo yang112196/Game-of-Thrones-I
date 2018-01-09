@@ -42,18 +42,7 @@ public class Solution {
             
             for(int i = 0; i<letter.size(); ++i){          //using for loop and if-else statement to tell 
 //              System.out.println(letter.get(i));
-                if(s.length() % 2 == 0){
-                    
-                    if(letter.get(i) % 2 == 0){
-                        result = "YES";
-                    }
-                    else{
-                        result = "NO";
-                        break;
-                    }
-                    
-                }
-                else{
+                
                     if(letter.get(i) % 2 != 0){
                         count++;
                     }
@@ -63,7 +52,7 @@ public class Solution {
                     else{
                         result = "YES";
                     }
-                }   
+                  
             }
         }
 
