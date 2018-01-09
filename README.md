@@ -2,14 +2,14 @@
 palindrome permutation
 Question from heckerrank.com (week of coding)
 
-Input Format
+Input Format:
   A single line which contains the input string.
 
-Constraints
+Constraints:
   1 <= length of string <= 100000 
   Each character of the string is a lowercase English letter.
   
-Output Format
+Output Format:
   A single line which contains YES or NO in uppercase.
   
 Solution:
