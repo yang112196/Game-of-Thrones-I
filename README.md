@@ -2,15 +2,16 @@
 palindrome permutation
 
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+    import java.io.*;
+    import java.util.*;
+    import java.text.*;
+    import java.math.*;
+    import java.util.regex.*;
+    
+    
+    public class Solution {
 
-public class Solution {
-
-    public static String gameOfThrones(String s){
+      public static String gameOfThrones(String s){
         String result = "";                                //results either "YES" or "NO"
         String temp = s;                                   //temporary String to save the modified String "s"
         ArrayList<Integer> letter = new ArrayList<>();     //to save different letter's repeated times
@@ -37,15 +38,15 @@ public class Solution {
                 System.out.println("index: " + i + " num: " + numberOfIter);
                 letter.add(numberOfIter);
                 temp = temp.replace(s.charAt(i), ' ');
-//                System.out.println(temp);
-                 numberOfIter = 1;
+                numberOfIter = 1;
 
                 }     
             }
             
             for(int i = 0; i<letter.size(); ++i){          //using for loop and if-else statement to tell 
-//              System.out.println(letter.get(i));
-                if(s.length() % 2 == 0){
+
+                  
+                  if(s.length() % 2 == 0){
                     
                     if(letter.get(i) % 2 == 0){
                         result = "YES";
